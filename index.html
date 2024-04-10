@@ -9,7 +9,7 @@
 
 </head>
 <body>    
-    <h1> Global Average Temperatures 1880-2023</h1> 
+    <h1> Number of Car Crashes in Catalonia Each Day of the Week </h1> 
     <canvas id="myChart" width="400" height="200"></canvas>
     <script>
         window.addEventListener('load', fetchData);
@@ -44,11 +44,11 @@
         const ctx = document.getElementById('myChart').getContext('2d');
 
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: data.years,
       datasets: [{
-        label: 'Temperatures in Celsius',
+        label: 'Number of Car Crashes ',
         data: data.temps,
         borderWidth: 1
       }]
